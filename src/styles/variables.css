@@ -1,0 +1,23 @@
+/* VedhEra  brand palette */
+:root {
+  /* Core identity */
+  --color-silver: #c0c4c9;
+  --color-light-silver: #e2e4e7;
+  --color-graphite: #17191d;
+  --color-charcoal: #30343a;
+  --color-white: #ffffff;
+  --color-soft-white: #f5f6f7;
+  --color-section-light: #edf0f2;
+
+  /* Extended cinematic palette */
+  --color-metal-silver: #c0c0c0;
+  --color-light-grey: #f5f6f7;
+  --color-medium-grey: #8b9098;
+  --color-deep-charcoal: #111315;
+  --color-black: #050505;
+
+  /* Semantic tokens (dark base) */
+  --bg: var(--color-graphite);
+  --fg: var(--color-soft-white);
+  --border: var(--color-silver);
+}

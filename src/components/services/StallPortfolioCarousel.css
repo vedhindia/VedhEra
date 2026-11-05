@@ -1,0 +1,309 @@
+.stall-portfolio-section {
+  position: relative;
+  min-height: 45rem;
+  padding: 4.5rem 0 3rem;
+  overflow: hidden;
+  color: #fff;
+  background-color: #041638;
+  background-image:
+    radial-gradient(ellipse at 50% 49%, rgba(12, 100, 206, 0.16), transparent 49%),
+    radial-gradient(ellipse at 50% 100%, rgba(0, 211, 217, 0.08), transparent 48%),
+    linear-gradient(180deg, rgba(7, 27, 86, 0.12) 0%, rgba(8, 39, 109, 0.18) 54%, rgba(4, 22, 56, 0.22) 100%),
+    url("/images/stall-design/stall_portfolio_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stall-portfolio-atmosphere {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(21, 179, 255, 0.13), transparent 37%),
+    linear-gradient(90deg, transparent, rgba(20, 92, 189, 0.1) 50%, transparent);
+}
+
+.stall-portfolio-atmosphere::before,
+.stall-portfolio-atmosphere::after {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 62%;
+  content: "";
+  background: linear-gradient(180deg, rgba(56, 233, 255, 0.7), rgba(0, 209, 228, 0.12) 48%, transparent);
+  box-shadow: 0 0 16px rgba(0, 225, 255, 0.4);
+}
+
+.stall-portfolio-atmosphere::before {
+  left: 32%;
+}
+
+.stall-portfolio-atmosphere::after {
+  right: 32%;
+}
+
+.stall-portfolio-light {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 48%;
+  background: linear-gradient(180deg, rgba(0, 255, 237, 0.7), transparent);
+  box-shadow: 0 0 12px rgba(0, 242, 255, 0.7);
+}
+
+.stall-portfolio-light::before {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  content: "";
+  transform: translateX(-50%);
+  background: #00f5ee;
+  box-shadow: 0 0 18px 7px rgba(0, 245, 238, 0.38);
+}
+
+.stall-portfolio-light-left {
+  left: 38%;
+  height: 38%;
+  opacity: 0.65;
+}
+
+.stall-portfolio-light-center {
+  left: 50%;
+  height: 54%;
+}
+
+.stall-portfolio-light-right {
+  right: 38%;
+  height: 38%;
+  opacity: 0.65;
+}
+
+.stall-portfolio-content {
+  z-index: 1;
+}
+
+.stall-portfolio-heading-copy > h2 {
+  max-width: 46rem;
+  color: #fff;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+}
+
+.stall-portfolio-heading-copy > p {
+  max-width: 42rem;
+  margin-top: 0.75rem;
+  color: rgba(235, 246, 255, 0.82);
+  font-size: 0.98rem;
+}
+
+.stall-portfolio-carousel {
+  margin-top: 1.65rem;
+}
+
+.stall-portfolio-stage {
+  max-width: 90rem;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.stall-portfolio-track {
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.stall-portfolio-halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stall-portfolio-halo-back {
+  width: min(94%, 86rem);
+  height: 66%;
+  background: radial-gradient(ellipse, rgba(15, 135, 242, 0.18), transparent 70%);
+  filter: blur(35px);
+}
+
+.stall-portfolio-halo-front {
+  z-index: 0;
+  width: min(62%, 54rem);
+  height: 61%;
+  background: radial-gradient(ellipse, rgba(17, 200, 230, 0.18), transparent 70%);
+  filter: blur(40px);
+}
+
+.stall-portfolio-card {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.stall-portfolio-card[aria-current="true"] {
+  border-color: rgba(224, 245, 255, 0.46);
+ 
+}
+
+.stall-portfolio-card:focus-visible {
+  outline: 2px solid rgba(166, 239, 255, 0.9);
+  outline-offset: 3px;
+}
+
+.stall-portfolio-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.stall-portfolio-card-shade {
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 9, 22, 0.02) 45%,
+    rgba(2, 9, 22, 0.16) 100%
+  );
+}
+
+.stall-portfolio-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.15rem;
+}
+
+.stall-portfolio-nav {
+  display: inline-flex;
+  min-width: 6rem;
+  height: 2.65rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 4px;
+  background: #ffc928;
+  color: #111827;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.stall-portfolio-nav:first-child {
+  justify-self: start;
+}
+
+.stall-portfolio-nav:last-child {
+  justify-self: end;
+}
+
+.stall-portfolio-nav:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #ffda58;
+  box-shadow: 0 7px 20px rgba(0, 10, 36, 0.25);
+}
+
+.stall-portfolio-nav:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.stall-portfolio-nav:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.stall-portfolio-nav:disabled {
+  cursor: wait;
+  opacity: 0.78;
+}
+
+.stall-portfolio-counter {
+  color: rgba(238, 247, 255, 0.92);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-align: center;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 1023px) {
+  .stall-portfolio-section {
+    min-height: 41rem;
+    padding-top: 4rem;
+  }
+
+  .stall-portfolio-carousel {
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .stall-portfolio-section {
+    min-height: 37rem;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .stall-portfolio-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .stall-portfolio-heading-copy > p {
+    font-size: 0.9rem;
+  }
+
+  .stall-portfolio-carousel {
+    margin-top: 0.9rem;
+  }
+
+  .stall-portfolio-halo-back {
+    width: 110%;
+  }
+
+  .stall-portfolio-halo-front {
+    width: 82%;
+  }
+
+  .stall-portfolio-controls {
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+  }
+
+  .stall-portfolio-nav {
+    min-width: 5.2rem;
+    height: 2.5rem;
+    padding: 0 0.7rem;
+    font-size: 0.76rem;
+  }
+
+  .stall-portfolio-counter {
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stall-portfolio-nav {
+    transition: none;
+  }
+}
