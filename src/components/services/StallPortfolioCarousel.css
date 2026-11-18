@@ -6,9 +6,9 @@
   color: #fff;
   background-color: #041638;
   background-image:
-    radial-gradient(ellipse at 50% 49%, rgba(12, 100, 206, 0.16), transparent 49%),
-    radial-gradient(ellipse at 50% 100%, rgba(0, 211, 217, 0.08), transparent 48%),
-    linear-gradient(180deg, rgba(7, 27, 86, 0.12) 0%, rgba(8, 39, 109, 0.18) 54%, rgba(4, 22, 56, 0.22) 100%),
+    radial-gradient(ellipse at 50% 49%, rgba(52, 71, 91, 0.16), transparent 49%),
+    radial-gradient(ellipse at 50% 100%, rgba(29, 82, 83, 0.08), transparent 48%),
+    linear-gradient(180deg, rgba(17, 24, 45, 0.50) 0%, rgba(16, 23, 41, 0.60) 54%, rgba(0, 0, 0, 0.70) 100%),
     url("/images/stall-design/stall_portfolio_background.png");
   background-position: center;
   background-repeat: no-repeat;

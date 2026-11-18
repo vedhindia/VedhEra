@@ -29,7 +29,7 @@ export const contactDetails = {
   phone: {
     label: "Phone",
     numbers: [
-      { value: "+91 98227 57770", dial: "+919822757770" },
+      { value: "+91 99239 56363", dial: "+919923956363" },
       { value: "+91 91122 97779", dial: "+919112297779" },
     ],
   },
@@ -40,9 +40,7 @@ export const contactDetails = {
   address: {
     label: "Office Address",
     lines: [
-      "Office No. 16, A wing, First Floor",
-      "Sagar Complex, Near Bhosari Metro Station",
-      "Nashik phata, Kasarwadi",
+      "Sagar Complex, Nashik phata, Pune, Maharashtra 411034, India",
     ],
     // The address exactly as supplied — used for the location map.
     mapQuery:

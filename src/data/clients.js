@@ -21,12 +21,13 @@ export const clientLogos = LOGO_NUMBERS.map((n) => ({
   src: `/images/graphic-design/logos/logo${n}.webp`,
 }));
 
-export const stallClientLogos = Array.from({ length: 8 }, (_, index) => {
+export const stallClientLogos = Array.from({ length: 15 }, (_, index) => {
   const number = index + 1;
 
   return {
     id: `stall-client-logo-${number}`,
     name: null,
     src: `/images/Stall_Client_Logo/${number}.webp`,
+    scale: number >= 9 ? 0.55 : 1,
   };
 });

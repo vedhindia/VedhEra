@@ -261,7 +261,8 @@ function StallClientLogosSection() {
                 height="576"
                 loading="eager"
                 decoding="async"
-                className="max-h-full max-w-full object-contain opacity-60 grayscale transition-[filter,opacity] duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                style={{ transform: `scale(${logo.scale})` }}
+                className="h-full w-full object-contain opacity-60 grayscale transition-[filter,opacity] duration-300 group-hover:opacity-100 group-hover:grayscale-0"
               />
             </li>
           ))}
